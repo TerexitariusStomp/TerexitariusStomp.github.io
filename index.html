@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>T.R. Price — Environmental Technologist</title>
+<meta name="description" content="T.R. Price builds decentralized systems
+that make environmental evidence more credible and regenerative finance
+more accountable. Christchurch, New Zealand.">
+<meta property="og:title" content="T.R. Price — Environmental Technologist">
+<meta property="og:description" content="Blockchain and AI systems for
+credible environmental evidence and accountable regenerative finance.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 15C30 30 22 50 28 68c6 18 22 24 22 24s16-6 22-24c6-18-2-38-22-53z' fill='%233d6b4f'/%3E%3Cpath d='M50 25v60M50 40l-12-8M50 40l12-8M50 55l-10-7M50 55l10-7' stroke='%23f7f3ea' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --paper:#f7f3ea; --paper2:#efe8d8; --ink:#232b26; --ink2:#4a554e;
+ --green:#3d6b4f; --green2:#2c4f3a; --clay:#b5684a; --sand:#d9cdb4;
+ --card:#fffdf7; --bdr:#e3dac6
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;color:var(--ink);background:var(--paper);
+ font:16px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+ background-image:
+  radial-gradient(60% 40% at 85% 0%, rgba(61,107,79,.07), transparent 60%),
+  radial-gradient(50% 35% at 5% 30%, rgba(181,104,74,.06), transparent 60%);
+}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;
+ color:var(--green2);letter-spacing:-.01em}
+a{color:var(--green)}
+a:hover{color:var(--green2)}
+
+/* ---- header ---- */
+header{padding:90px 0 54px;text-align:center}
+.eyebrow{
+ display:inline-block;font-size:12.5px;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--clay);font-weight:600;
+ margin-bottom:18px
+}
+h1{font-size:clamp(38px,6vw,62px);margin:0 0 14px;font-weight:700}
+.tagline{
+ font-family:Fraunces,Georgia,serif;font-size:clamp(17px,2.2vw,21px);
+ color:var(--ink2);max-width:640px;margin:0 auto 10px;font-style:italic
+}
+.loc{color:var(--ink2);font-size:14px;margin-top:14px}
+.links{
+ display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+ margin-top:30px
+}
+.btn{
+ display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+ font-size:14px;font-weight:600;color:var(--green2);
+ background:var(--card);border:1px solid var(--bdr);
+ padding:10px 18px;border-radius:999px;transition:.15s
+}
+.btn:hover{border-color:var(--green);background:#fff;
+ transform:translateY(-1px);box-shadow:0 4px 14px -6px rgba(44,79,58,.3)}
+.btn.primary{background:var(--green);color:#fff;border-color:var(--green)}
+.btn.primary:hover{background:var(--green2)}
+.btn svg{width:15px;height:15px;flex:none}
+
+/* ---- sections ---- */
+section{padding:44px 0 10px}
+h2{font-size:clamp(24px,3.4vw,32px);margin:0 0 8px}
+.sect-sub{color:var(--ink2);font-size:15px;margin:0 0 26px;
+ max-width:640px}
+.rule{height:3px;width:64px;background:var(--clay);border-radius:99px;
+ margin:0 0 26px}
+
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.cards{grid-template-columns:1fr}}
+.card{
+ background:var(--card);border:1px solid var(--bdr);border-radius:14px;
+ padding:20px 22px;transition:.15s
+}
+.card:hover{border-color:var(--sand);box-shadow:0 6px 24px -12px
+ rgba(44,79,58,.25)}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--ink2);font-size:14.5px}
+
+/* timeline */
+.tl{position:relative;margin-left:8px;padding-left:28px}
+.tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;
+ width:2px;background:var(--sand)}
+.job{position:relative;padding-bottom:30px}
+.job::before{content:"";position:absolute;left:-28px;top:7px;
+ width:12px;height:12px;border-radius:50%;background:var(--green);
+ border:3px solid var(--paper);box-shadow:0 0 0 2px var(--sand)}
+.job .when{font-size:12.5px;color:var(--clay);font-weight:600;
+ letter-spacing:.06em;text-transform:uppercase}
+.job h3{margin:2px 0 2px;font-size:19px}
+.job .org{color:var(--ink2);font-size:14px;font-weight:600;margin-bottom:6px}
+.job ul{margin:6px 0 0;padding-left:18px;color:var(--ink2);
+ font-size:14.5px}
+.job li{margin-bottom:4px}
+
+/* builds */
+.build{
+ display:block;text-decoration:none;color:inherit;background:var(--card);
+ border:1px solid var(--bdr);border-radius:14px;padding:18px 22px;
+ margin-bottom:12px;transition:.15s
+}
+.build:hover{border-color:var(--green);transform:translateY(-1px);
+ box-shadow:0 6px 20px -10px rgba(44,79,58,.3)}
+.build h3{margin:0 0 4px;font-size:17px;display:inline}
+.build .arr{color:var(--clay);font-size:14px;margin-left:6px}
+.build p{margin:4px 0 0;color:var(--ink2);font-size:14.5px}
+
+/* edu */
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.edu{grid-template-columns:1fr}}
+.edu .card b{display:block;font-size:15.5px;color:var(--green2)}
+.edu .card span{color:var(--ink2);font-size:14px}
+.langs{margin-top:16px;color:var(--ink2);font-size:14.5px}
+
+footer{
+ margin-top:70px;padding:34px 0 46px;text-align:center;
+ border-top:1px solid var(--bdr);color:var(--ink2);font-size:13.5px
+}
+footer .links{margin-top:14px}
+</style></head><body>
+<div class="wrap">
+
+<header>
+ <div class="eyebrow">Environmental Technologist · Blockchain &amp; AI</div>
+ <h1>T.R. Price</h1>
+ <p class="tagline">I build decentralized systems that make environmental
+ evidence more credible and regenerative finance more accountable.</p>
+ <div class="loc">Christchurch, New Zealand · also known as
+ Terexitarius</div>
+ <div class="links">
+  <a class="btn primary" href="https://drive.google.com/file/d/1hPi3cy2o3pkHDCjZwPv64HzaRKza6aSk/view" target="_blank" rel="noopener">Read my CV</a>
+  <a class="btn" href="https://github.com/TerexitariusStomp" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn" href="https://x.com/Terexitarius" target="_blank" rel="noopener">X</a>
+  <a class="btn" href="mailto:terexmaps@gmail.com">terexmaps@gmail.com</a>
+  <a class="btn" href="tel:+16179174344">+1 617 917 4344</a>
+ </div>
+</header>
+
+<section id="work">
+ <h2>What I work on</h2>
+ <div class="rule"></div>
+ <p class="sect-sub">Four areas where mapping, money and open technology
+ meet — each aimed at making environmental work easier to fund and easier
+ to trust.</p>
+ <div class="cards">
+  <div class="card"><h3>Regenerative finance</h3>
+   <p>Funding models that pay for ecosystem restoration — carbon and
+   environmental credits recorded on blockchains, community currencies,
+   and finance tied to measurable impact.</p></div>
+  <div class="card"><h3>Environmental intelligence</h3>
+   <p>Using satellites, sensors and decentralized networks to monitor,
+   report and verify what is actually happening on the land — and turning
+   that into data people can act on.</p></div>
+  <div class="card"><h3>Protocols &amp; decentralized finance</h3>
+   <p>The plumbing behind it: stablecoins, treasury design, decentralized
+   exchanges and automation that moves money across many blockchains
+   without middlemen.</p></div>
+  <div class="card"><h3>Private &amp; open AI</h3>
+   <p>AI you can run and own yourself — local models, agents, and
+   decentralized computing and storage instead of rented platforms.</p></div>
+ </div>
+</section>
+
+<section id="experience">
+ <h2>Experience</h2>
+ <div class="rule"></div>
+ <div class="tl">
+  <div class="job">
+   <div class="when">Jan 2024 – Aug 2025</div>
+   <h3>Chief Science Officer</h3>
+   <div class="org"><a href="https://azos.finance/" target="_blank"
+    rel="noopener">Azos Labs</a></div>
+   <ul>
+    <li>Connected the organization to more than $57M of real-world
+    environmental assets, and mapped paths to $2B more.</li>
+    <li>Built the frameworks used to assess those assets' impact and
+    financial value.</li>
+    <li>Coordinated speaking events and brought on advisors across
+    several countries.</li>
+   </ul>
+  </div>
+  <div class="job">
+   <div class="when">May 2022 – present</div>
+   <h3>Founder</h3>
+   <div class="org">Treetable LLC — Moffat, Colorado</div>
+   <ul>
+    <li>Wrote the technical management plan for regenerating 120 acres
+    of desertified land.</li>
+    <li>Set up the initial infrastructure and business plan for the
+    project.</li>
+   </ul>
+  </div>
+  <div class="job">
+   <div class="when">Nov 2021 – Nov 2023</div>
+   <h3>Founder</h3>
+   <div class="org"><a href="https://linktr.ee/Avano_io" target="_blank"
+    rel="noopener">Avano (Tierrx Inc.)</a></div>
+   <ul>
+    <li>Raised more than $100,000 in grants.</li>
+    <li>Built a decentralized system for monitoring, reporting and
+    verifying environmental outcomes — and grew that team to 75+
+    people in two months.</li>
+    <li>Ran an early regenerative-finance metaverse event that raised
+    about $9,000 for environmental organizations.</li>
+   </ul>
+  </div>
+  <div class="job">
+   <div class="when">Nov 2021 – Oct 2023</div>
+   <h3>Founder</h3>
+   <div class="org"><a href="https://www.hopearth.cc/" target="_blank"
+    rel="noopener">HOPEarth</a></div>
+   <ul>
+    <li>Built the automation that distributes very small (micro and
+    nano-scale) carbon credits.</li>
+    <li>Wrote the initial tokenization framework and led partnerships
+    with on-chain carbon credit producers.</li>
+   </ul>
+  </div>
+  <div class="job">
+   <div class="when">Dec 2021 – Dec 2023</div>
+   <h3>Advisor</h3>
+   <div class="org"><a href="https://www.fransine.com/" target="_blank"
+    rel="noopener">Fransine Farms</a></div>
+   <ul>
+    <li>Advised on using satellite monitoring for farms transitioning
+    to regenerative practices.</li>
+    <li>Opened doors for a possible expansion into New Zealand.</li>
+   </ul>
+  </div>
+  <div class="job">
+   <div class="when">2015 – 2021</div>
+   <h3>Earlier work</h3>
+   <div class="org">Peace Corps Paraguay · GIS teaching · consulting ·
+   community organizing</div>
+   <ul>
+    <li>Paraguay (2017–19): mapped the country's first orienteering
+    courses and an Atlantic Forest reserve, and helped bring beekeeping
+    training to local families.</li>
+    <li>Produced a client's first below-ground hydrology maps — later
+    used in a court case.</li>
+    <li>Led waste-diversion data collection in Salida, Colorado, and
+    presented the findings to the regional council of governments.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section id="builds">
+ <h2>Selected builds</h2>
+ <div class="rule"></div>
+ <a class="build" href="https://github.com/TerexitariusStomp"
+  target="_blank" rel="noopener">
+  <h3>M0R3</h3><span class="arr">→</span>
+  <p>An impact-coordination protocol: automated finance tools that run
+  across 118 blockchains, peer-to-peer networking, and a token model
+  designed to reward real-world impact work.</p></a>
+ <a class="build" href="https://github.com/TerexitariusStomp"
+  target="_blank" rel="noopener">
+  <h3>Rooted Finance</h3><span class="arr">→</span>
+  <p>A decentralized-finance protocol backed by real climate assets, with
+  a frontend rebuilt for people new to DeFi.</p></a>
+ <a class="build" href="https://github.com/TerexitariusStomp/Mutiraon"
+  target="_blank" rel="noopener">
+  <h3>Stablecoin on BSC</h3><span class="arr">→</span>
+  <p>A MakerDAO-style stablecoin — digital money kept stable through
+  collateral — with a liquidation engine built on Aave V3 and
+  PancakeSwap, plus monitoring bots.</p></a>
+ <a class="build" href="https://github.com/TerexitariusStomp/agritrace"
+  target="_blank" rel="noopener">
+  <h3>Community currencies &amp; AgroTrace</h3><span class="arr">→</span>
+  <p>Local currency platforms in Brazil (including ones that work over
+  basic USSD phones) and a tool that traces agroforestry products back
+  to the land they came from.</p></a>
+ <a class="build" href="https://terexitariusstomp.github.io/climate-week-search/"
+  target="_blank" rel="noopener">
+  <h3>Climate Week NYC archive</h3><span class="arr">→</span>
+  <p>A searchable archive of 975 Climate Week 2026 videos — ask a
+  question in plain English and jump to the exact moment someone said
+  it.</p></a>
+</section>
+
+<section id="education">
+ <h2>Education &amp; languages</h2>
+ <div class="rule"></div>
+ <div class="edu">
+  <div class="card"><b>PhD coursework — Environmental Economics</b>
+   <span>Lincoln University, New Zealand (2021–2023), unfinished</span></div>
+  <div class="card"><b>M.S. Environmental Studies</b>
+   <span>Antioch University New England (2020), through the Peace Corps
+   Master's International program — thesis modeled ecosystem services
+   in Paraguay using GIS</span></div>
+  <div class="card"><b>B.S. Environmental Studies</b>
+   <span>Fort Lewis College (2016), Spanish minor and GIS
+   certificate</span></div>
+  <div class="card"><b>Languages</b>
+   <span>English and Spanish, fluent · Guaraní, basic</span></div>
+ </div>
+</section>
+
+<footer>
+ Trained in GIS and environmental economics · working in Web3
+ since 2021
+ <div class="links">
+  <a href="https://drive.google.com/file/d/1hPi3cy2o3pkHDCjZwPv64HzaRKza6aSk/view" target="_blank" rel="noopener">CV</a> ·
+  <a href="https://github.com/TerexitariusStomp" target="_blank" rel="noopener">GitHub</a> ·
+  <a href="https://x.com/Terexitarius" target="_blank" rel="noopener">X</a> ·
+  <a href="mailto:terexmaps@gmail.com">email</a>
+ </div>
+</footer>
+</div>
+</body></html>
