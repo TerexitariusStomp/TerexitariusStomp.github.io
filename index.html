@@ -83,6 +83,17 @@ h2{font-size:clamp(24px,3.4vw,32px);margin:0 0 8px}
 .card h3{margin:0 0 6px;font-size:18px}
 .card p{margin:0;color:var(--ink2);font-size:14.5px}
 
+/* featured banner */
+.feature{
+ background:var(--card);border:1px solid var(--green);
+ border-left-width:4px;border-radius:14px;padding:26px 28px;
+ margin-bottom:26px
+}
+.feature h3{font-size:clamp(20px,3vw,26px);margin:0 0 10px}
+.feature p{max-width:640px}
+.feature .links{justify-content:flex-start;margin-top:18px}
+.feature .note{margin-top:16px;font-size:13.5px;color:var(--ink2)}
+
 /* timeline */
 .tl{position:relative;margin-left:8px;padding-left:28px}
 .tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;
@@ -141,6 +152,29 @@ footer .links{margin-top:14px}
   <a class="btn" href="tel:+16179174344">+1 617 917 4344</a>
  </div>
 </header>
+
+<section id="defi4refi">
+ <div class="feature">
+  <div class="eyebrow">Public-goods studio</div>
+  <h3>defi4refi — free, open-source protocol engineering</h3>
+  <p>Regenerative-finance projects have world-class vision and no
+  engineering budget. defi4refi is a public-goods development studio:
+  supporters fund the studio, and the studio designs and ships protocol
+  codebases <b>free</b> to selected teams — community treasuries, staking
+  systems, local currencies, bonds, governance.</p>
+  <p>Every build is composed per project from production-proven
+  open-source modules, delivered as its own repository with automated
+  verification. Audit-ready, not audited — your team deploys and operates
+  the contracts under your own keys.</p>
+  <div class="links">
+   <a class="btn primary" href="https://github.com/defi4refi/defi4refi/issues/new?template=apply-for-build.md" target="_blank" rel="noopener">Submit your idea</a>
+   <a class="btn" href="https://t.me/defi4refi" target="_blank" rel="noopener">Join the community</a>
+   <a class="btn" href="https://github.com/defi4refi/defi4refi" target="_blank" rel="noopener">How it works</a>
+  </div>
+  <div class="note">Funded by donations to the studio — patrons of a
+  public good, not clients buying a service.</div>
+ </div>
+</section>
 
 <section id="work">
  <h2>What I work on</h2>
